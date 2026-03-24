@@ -73,6 +73,12 @@ This pack replaces "ask an assistant and hope" with a structured review process:
 analyze the problem, a Devil's Advocate challenges their assumptions, and the Lead Producer
 synthesizes everything into an actionable result with evidence standards and severity rankings.
 
+It also comes from synthesis, not reinvention. This pack takes inspiration from strong ideas in
+`superpowers` and `compilation7`, then adapts them for the realities of end-to-end MMO and
+live-service product development. The result is not a loose pile of specialist prompts or a direct
+fork of another pack, but a coordinated team for design, frontend, backend, product, QA, smart
+contracts, deployment, live ops, iteration, and cleanup.
+
 You do not need to know the internal routing. Describe the problem. The Lead Producer figures out
 who to call.
 
