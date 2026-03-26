@@ -60,4 +60,5 @@ Pairings: frontend owner, brand owner if needed
 - Check current docs before assuming API details. Do not freeze stale library info.
 - Do not add custom wrappers before base primitives prove insufficient.
 - This workflow handles shadcn/ui method, not broader frontend architecture.
+- If task exceeds narrow shadcn/ui method, escalate back to LP for Frontend Team routing.
 - Do not treat static code review as enough evidence when browser behavior is the question.

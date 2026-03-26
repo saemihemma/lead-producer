@@ -32,7 +32,7 @@ description: "Documentation review and design: Diataxis taxonomy, audience analy
 ## Reference Map
 - `references/audience-and-diataxis.md` - audience fit, doc taxonomy, hierarchy, clarity
 - `references/api-docs-and-adrs.md` - API docs, examples, ADRs, decision records
-- `references/changelogs-and_examples.md` - changelogs, migration notes, and example hygiene
+- `references/changelogs-and-examples.md` - changelogs, migration notes, and example hygiene
 
 ## Default Output
 ```text

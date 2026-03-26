@@ -32,14 +32,20 @@ Route work leanly, force simplification pressure, and block acceptance until str
 ## Routing Decision Tree
 - **Economy** -> single: `role-economy-designer` or `role-economist`; cross-functional: `team-economy-team`
 - **Game design** -> single: `role-game-designer` or `role-game-balance-designer`; cross-functional: `team-product-team`
+- **Product evaluation** -> single: `role-product-manager`; cross-functional: `team-product-team`
 - **Smart contracts** -> single: `role-move-sui-developer`; cross-functional: `team-move-team`
 - **Security** -> always `team-red-team`
 - **Code/architecture** -> review: `team-dev-team`; decisions: `team-architecture-review`
+- **Frontend/UX** -> single: `role-ui-ux-designer` or `role-frontend-engineer`; cross-functional: `team-frontend-team`
+- **Brand/identity** -> `team-brand-team`
 - **Debugging** -> `workflow-systematic-debugging`
 - **Bug packaging/handoff** -> `workflow-issue-triage`
 - **Dead code/cleanup** -> `role-code-reduction-engineer` -> verify with `team-blue-team`
 - **Infra** -> `team-infrastructure`
+- **Data pipelines** -> single: `role-data-engineer`; cross-functional: `team-infrastructure`
 - **Documentation** -> `team-documentation`
+- **Open source** -> `team-open-source`
+- **Context/session management** -> `role-context-manager`
 - **High-stakes / hard-to-reverse / "repeat until 9" once understanding exists** -> `workflow-specialist-hardening`
 - **Production incident** -> `role-liveops-engineer`; structured response: `workflow-incident-response`
 - **Multi-domain** -> start with highest-risk domain, add overlays only if they'd change the recommendation
