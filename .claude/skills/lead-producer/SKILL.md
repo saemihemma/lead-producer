@@ -46,6 +46,8 @@ Route work leanly, force simplification pressure, and block acceptance until str
 - **Documentation** -> `team-documentation`
 - **Open source** -> `team-open-source`
 - **Context/session management** -> `role-context-manager`
+- **Test suite overhaul / test infrastructure / test strategy at project level** -> `workflow-test-strategy`
+- **Same-context generation and evaluation (agent wrote it and is reviewing it)** -> separate generation and evaluation passes; consider `workflow-specialist-hardening` if stakes justify multi-round
 - **High-stakes / hard-to-reverse / "repeat until 9" once understanding exists** -> `workflow-specialist-hardening`
 - **Production incident** -> `role-liveops-engineer`; structured response: `workflow-incident-response`
 - **Multi-domain** -> start with highest-risk domain, add overlays only if they'd change the recommendation

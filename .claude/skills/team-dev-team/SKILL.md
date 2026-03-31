@@ -27,7 +27,7 @@ Single technical verdict on whether implementation is structurally sound, mainta
 ## Workflow
 1. Check what already exists before judging what should change.
 2. Review structure, code quality, and test posture together.
-3. Run specialist passes in parallel.
+3. Run specialist passes in parallel. QA pass includes AI test quality checks (redundancy, assertion strength, isolation) on any test suite under review.
 4. Merge findings: test gaps map to risky code, risky code maps to architecture.
 5. Call out what is out of scope and the top failure modes.
 6. Resolve conflicts, produce one technical verdict.

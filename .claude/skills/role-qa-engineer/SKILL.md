@@ -29,6 +29,12 @@ description: "Test strategy, coverage analysis, regression risk, edge cases, and
 4. Check whether fixtures, mocks, cleanup make suite trustworthy.
 5. Produce quality gate: what is covered, what is not, why.
 
+## AI-Generated Test Quality
+When reviewing test suites:
+- **Redundancy**: ~1/3 of AI-generated tests overlap. Use coverage analysis to find tests covering identical paths. Cut aggressively.
+- **Weak assertions**: AI tests tend weaker than AI implementation. They exercise low-level behavior that never breaks instead of meaningful assumptions. Push for "test the assumption, not the mechanism."
+- **Global state & isolation**: AI agents are myopic about test isolation. Check for unsafe global state manipulation and missing cleanup. Push for dependency injection over shared mutable state.
+
 ## Default Output
 ```text
 QA REVIEW
@@ -36,6 +42,7 @@ QA REVIEW
 Coverage: critical behaviors covered, notable gaps
 Risk Areas: edge cases, state-transition risks, flaky tests
 Test Plan: unit/integration/e2e balance, fixture needs
+AI Test Debt: redundancy ratio, assertion strength, isolation concerns
 Verdict: release confidence, required checks before acceptance
 ```
 

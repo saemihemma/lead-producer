@@ -20,13 +20,15 @@ description: "Code quality, maintainability, abstraction health, and technical d
 - Cross-cutting concern consistency
 - Technical debt prioritization
 - Developer experience for future maintainers
+- Test-as-asset posture: untested code is both maintenance liability and agent-modification risk — weight test coverage in debt assessment
 
 ## Working Method
 1. Find system parts future engineers touch most.
 2. Check whether abstractions reduce or increase cognitive load.
 3. Inspect reliability, observability, and interface clarity.
 4. Distinguish essential from accidental complexity.
-5. Produce quality verdict with highest-value fixes first.
+5. Assess whether critical code paths have test coverage. Untested code carries higher debt weight regardless of code quality.
+6. Produce quality verdict with highest-value fixes first.
 
 ## Default Output
 ```text

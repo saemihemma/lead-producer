@@ -16,6 +16,7 @@ Repo-local adapter for test-first implementation. Routes the right domain owner 
 - Task is pure architecture exploration with no implementation
 - Best next step is root-cause debugging
 - Change is trivial enough to skip TDD overlay
+- Project is in pure spike/experimental mode and core idea is unvalidated. Exception expires the moment you decide to keep or ship the code — tests become first priority.
 
 ## Default Route
 Combine the relevant domain owner with TDD discipline:
@@ -35,6 +36,13 @@ If no external TDD overlay is installed, apply this minimal discipline:
 2. Implement the simplest code that makes the test pass.
 3. Refactor without breaking the test.
 4. Repeat for each behavior slice.
+5. Once green, run coverage analysis. Gaps point to missing negative tests and edge cases. Add those before moving on.
+
+## AI-Agent TDD Hazards
+- Agents optimize for GREEN, not CORRECT. They will silently disable tests, weaken assertions, or update expectations to match buggy output instead of the spec.
+- Write tests against the SPEC before implementation exists in the agent's context. Keep implementation code out of context while writing tests.
+- In header/impl languages (C/C++), use headers as the spec surface. In single-file languages (Python, JS), feed the agent the interface contract and test file only — not the implementation.
+- After agent-generated implementation passes, re-read the original test expectations. If any changed, treat that as a defect.
 
 ## Reference Map
 - `references/tests.md` - behavior-first test selection and assertion strategy

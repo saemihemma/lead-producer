@@ -17,7 +17,7 @@ routing so agents can spend more attention on the development itself: economies,
 exploits, incidents, rollout risk, and tightly coupled systems. If it can handle that, it becomes
 broadly useful across other software work too.
 
-50 total skills: 1 coordinator + 49 specialist skills (28 roles, 12 teams, 9 workflows). Use it
+51 total skills: 1 coordinator + 50 specialist skills (28 roles, 12 teams, 10 workflows). Use it
 across the full product lifecycle: prototype, design, implementation, testing, deployment, live
 ops, iteration, and code cleanup. It includes host guides for **Claude Code** and **OpenAI Codex**
 on macOS, Linux, and Windows. Windows is in good shape. macOS and Linux still need a quick real
@@ -97,6 +97,10 @@ It also comes from synthesis, not reinvention. This pack draws inspiration from 
 `compilation7`, `gstack`, and Claude Code Game Studios, then adapts those ideas into a coordinated
 system for end-to-end MMO and live-service development. It is not a direct fork or bundled
 dependency on any of them.
+
+AI-era testing guidance (TDD hazards, AI-generated test quality, evaluator independence) draws from
+Anthropic's [Harness Design for Long-Running Application Development](https://www.anthropic.com/engineering/harness-design-long-running-apps)
+and Halldór Fannar's [Your Tests Are Still the Real Assets](https://www.linkedin.com/pulse/your-tests-still-real-assets-halldor-fannar/) (Augmented newsletter, March 2026).
 
 You do not need to know the internal routing. Describe the problem. The Lead Producer figures out
 who to call, or whether to suggest a deeper play before routing.
@@ -228,7 +232,7 @@ back to this clone, so keep the repo where you installed it.
 | Blue Team | Cleanup verification - dead code removal, regression check |
 | Open Source | OSS readiness - licensing, contribution guides, API surface |
 
-### 9 Workflows
+### 10 Workflows
 
 | Workflow | When To Use |
 |----------|-------------|
@@ -239,6 +243,7 @@ back to this clone, so keep the repo where you installed it.
 | Systematic Debugging | Unknown bug or failure. Reproduce -> hypothesize -> test -> confirm root cause |
 | Issue Triage | Package debugging findings into a durable handoff artifact |
 | Test-Driven Development | Behavior-sensitive changes need disciplined execution |
+| Test Strategy | Project-level test suite audit, rearchitecture, and migration planning |
 | Design Interface Options | Compare 3 interface approaches side-by-side |
 | shadcn/ui Implementation | Component implementation with shadcn/ui patterns |
 
